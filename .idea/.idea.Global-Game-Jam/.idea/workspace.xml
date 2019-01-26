@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b80a0b-5ff9-4d77-814d-d15395f5ed83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Main.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Background.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jam/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,12 +158,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548475163767</updated>
       <workItem from="1548475178050" duration="440000" />
-      <workItem from="1548475664160" duration="4916000" />
+      <workItem from="1548475664160" duration="5630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5356000" />
+    <option name="totallyTimeSpent" value="6070000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -178,7 +176,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13326226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

@@ -87,7 +87,7 @@ BoxCollider:
   m_GameObject: {fileID: 3049839563346233749}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -178,7 +178,7 @@ BoxCollider:
   m_GameObject: {fileID: 5871626425571069457}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 8281785918328203198}
   - component: {fileID: 1538241399613752546}
   - component: {fileID: 3327865778143429415}
+  - component: {fileID: 382043212526134893}
   m_Layer: 0
   m_Name: Lantern
   m_TagString: Untagged
@@ -272,10 +273,25 @@ BoxCollider:
   m_GameObject: {fileID: 6720909156040510080}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &382043212526134893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6720909156040510080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf0e1cfcb55346999321f7b47c724d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 0}
+  _lerpSpeed: 4
+  _offset: {x: 0, y: 0, z: 0}
 --- !u!1 &8047893989443764568
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,7 +379,7 @@ BoxCollider:
   m_GameObject: {fileID: 8047893989443764568}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
