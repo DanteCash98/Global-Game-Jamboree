@@ -3,7 +3,9 @@ guid: bcb3014c39f384348a55d3554eae6861
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - BlackScreen: {fileID: 1761636925517061855, guid: 0a2e66a2de43f964599aeb83d1b0bf3f,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

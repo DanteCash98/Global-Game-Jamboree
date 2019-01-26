@@ -26,12 +26,12 @@ public class MusicManager : MonoBehaviour
         else {
             instance = this;
         }
-        DontDestroyonLoad(gameObject);
+        //DontDestroyonLoad(gameObject);
     }
 
     #endregion
 
-    public void Play(String name){
+    public void Play(string name){
      MainSource.clip = Resources.Load<AudioClip>(name);
      MainSource.Play();
     }
@@ -49,8 +49,8 @@ public class MusicManager : MonoBehaviour
     //     }
     // }
 
-    private IEnumerator MusicSwap(String songname){
-        String _songname = songname;
+    private IEnumerator MusicSwap(string songname){
+        string _songname = songname;
         yield return null;
 
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
@@ -74,8 +74,8 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    private IEnumerator MusicLayer(String songname){
-        String _songname = songname;
+    private IEnumerator MusicLayer(string songname){
+        string _songname = songname;
         yield return null;
 
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
