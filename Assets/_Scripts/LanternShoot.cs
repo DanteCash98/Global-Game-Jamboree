@@ -5,8 +5,9 @@ using UnityEngine;
 public class LanternShoot : MonoBehaviour {
     
     public Transform light;
-
     private Transform player;
+
+    public Vector3 lanternScaler;
 
     private void Start() {
         player = Player.instance.transform;
