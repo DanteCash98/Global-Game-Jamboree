@@ -14,8 +14,16 @@ public class FollowPlayer : MonoBehaviour {
     }
 
     void Update() {
+        
         transform.position = Vector3.Lerp(transform.position, player.position + offset, Time.deltaTime * lerpSpeed);
-    }
+
+        if (GetInput.Forward()) {
+            offset.x = -1;
+        } else if (GetInput.Back()) {
+            offset.x = 1;
+        }
+        
+    } 
 
     [ContextMenu("Bake Offset")]
     private void BakeOffset() {

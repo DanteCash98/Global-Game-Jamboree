@@ -5,7 +5,8 @@ using UnityEngine;
 public class LightWeapon : MonoBehaviour
 {
     private void Start() {
-        GetComponent<MeshRenderer>().sortingLayerName = "Foreground";
+        if (GetComponent<MeshRenderer>() != null)
+            GetComponent<MeshRenderer>().sortingLayerName = "Foreground";
     }
 
     void OnTriggerEnter(Collider other) {

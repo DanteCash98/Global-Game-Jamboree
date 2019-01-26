@@ -515,6 +515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 200414028}
+  projectile: {fileID: 1649947684413646014, guid: b75fedf72cdcf441091f2dcbbf3ada98,
+    type: 3}
 --- !u!1 &8047893989443764568
 GameObject:
   m_ObjectHideFlags: 0

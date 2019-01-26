@@ -9,6 +9,7 @@
         <e p="_Scripts" t="Include">
           <e p="DarknessLook.cs" t="Include" />
           <e p="DarknessSut.cs" t="Include" />
+          <e p="DestroyAfter.cs" t="Include" />
           <e p="Enemy_Test.cs" t="Include" />
           <e p="Extensions" t="Include">
             <e p="TransformExtensions.cs" t="Include" />
@@ -25,6 +26,7 @@
           <e p="Player.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
+          <e p="Projectile.cs" t="Include" />
           <e p="SutSpawner.cs" t="Include" />
         </e>
       </e>
