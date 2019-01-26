@@ -2,17 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerRespawn : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class PlayerRespawn : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public Vector3 checkPoint;
+   public float checkpointTimer;
+   
+   private void OnTriggerEnter(Collider other) {
+
+      if (other.gameObject.layer == 11) {
+         transform.position = checkPoint;
+      }
+      
+   }
+
+   private void OnCollisionStay(Collision other) {
+
+      if (other.gameObject.layer == 9) {
+         checkpointTimer += Time.deltaTime;
+      }
+
+      if (checkpointTimer > 2) {
+         checkPoint = other.transform.position;
+         checkPoint.y += 2;
+      }
+      
+   }
+   
+   private void OnCollisionExit(Collision other) {
+
+      if (other.gameObject.layer == 9) {
+         checkpointTimer = 0;
+      }
+      
+   }
+   
+   
 }
