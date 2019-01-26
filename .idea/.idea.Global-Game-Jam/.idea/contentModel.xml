@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
+          <e p="Enemy_Test.cs" t="Include" />
           <e p="Extensions" t="Include">
             <e p="TransformExtensions.cs" t="Include" />
             <e p="Vector3Extensions.cs" t="Include" />

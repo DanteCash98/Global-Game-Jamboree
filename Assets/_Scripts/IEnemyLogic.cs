@@ -5,4 +5,6 @@ using UnityEngine;
 public interface IEnemyLogic
 {
     void TakeDamage(float damage);
+
+    void Die();
 }
