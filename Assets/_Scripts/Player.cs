@@ -21,4 +21,14 @@ public class Player : MonoBehaviour
     }
     
     #endregion
+
+    private void OnTriggerEnter(Collider col)
+    {
+        GameObject other = col.GetComponent<GameObject>();
+        if(other is IInteractable)
+        {
+            IInteractable interactable = (IInteractable) gameObject.GetComponent(typeof(IInteractable));
+            interactable.Interact();
+        }
+    }
 }
