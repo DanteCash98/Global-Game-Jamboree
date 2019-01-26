@@ -119,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/LanternShoot.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <marker date="1548488628413" expanded="false" signature="6:78" ph="..." />
                 <marker date="1548488628413" expanded="true" signature="122:617" ph="{...}" />
@@ -223,12 +223,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548476427838</updated>
-      <workItem from="1548476433052" duration="7286000" />
+      <workItem from="1548476433052" duration="7569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7286000" />
+    <option name="totallyTimeSpent" value="7569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,7 +364,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/LanternShoot.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <marker date="1548488628413" expanded="false" signature="6:78" ph="..." />
             <marker date="1548488628413" expanded="true" signature="122:617" ph="{...}" />
