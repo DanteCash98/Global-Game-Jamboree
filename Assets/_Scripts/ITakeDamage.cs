@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IEnemyLogic
+public interface ITakeDamage
 {
     void TakeDamage(float damage);
-
-    void Die();
 }
