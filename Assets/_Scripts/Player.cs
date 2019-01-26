@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    
-    [SerializeField] List <Mememtos> collectedMememtos;
+    public enum Mememto {Shovel, Axe};
+    public List<Mememto> collectedMememtos;
     #region singleton
     
     public static Player instance { get; private set; }
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
         }
         else {
             instance = this;
-            collectedMememtos = new List<Mememtos>();
+            collectedMememtos = new List<Mememto>();
         }
         
     }
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public List<Mememtos> GetMememtos()
+    public List<Mememto> GetMememtos()
     {
         return collectedMememtos;
     }
