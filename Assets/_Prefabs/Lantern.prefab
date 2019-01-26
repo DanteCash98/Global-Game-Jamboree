@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1847704816}
   - component: {fileID: 1846934736}
   - component: {fileID: 1845804560}
+  - component: {fileID: 1804762624811353345}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -70,7 +71,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847992528}
-  m_Mesh: {fileID: 4300000, guid: 0e20aed6b543a4ff8b19caf64720a258, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 5c1cce9afe6d870499a0956191b3bdc4, type: 3}
 --- !u!23 &1845804560
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -108,6 +109,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1804762624811353345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847992528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5474634, y: 2.2938492, z: 1.5474641}
+  m_Center: {x: 0.00000008940697, y: -1.1935953, z: -0.00000016391279}
 --- !u!1 &3049839563346233749
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 200414028}
+  lanternScaler: {x: 0, y: 0, z: 0}
 --- !u!1 &8047893989443764568
 GameObject:
   m_ObjectHideFlags: 0

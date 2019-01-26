@@ -6,11 +6,13 @@ public class LanternShoot : MonoBehaviour {
     
     public Transform light;
     private Transform player;
+    private BoxCollider boxCollider;
 
     public Vector3 lanternScaler;
 
     private void Start() {
         player = Player.instance.transform;
+        boxCollider = GetComponent<BoxCollider>();
     }
 
     private void Update() {
@@ -26,10 +28,12 @@ public class LanternShoot : MonoBehaviour {
     IEnumerator Fire() {
 
         light.localScale *= 2;
+        boxCollider.transform.localScale *= 2;
         
         yield return new WaitForSeconds(.1f);
 
         light.localScale /= 2;
+        boxCollider.transform.localScale /= 2;
 
     }
 
