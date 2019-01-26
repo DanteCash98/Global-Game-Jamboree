@@ -20,11 +20,16 @@ public class LanternShoot : MonoBehaviour {
         light.transform.LookAt(player.position);
 
         if (Input.GetKeyDown(KeyCode.J)) {
-            StartCoroutine(Fire());
+      //      StartCoroutine(Fire());
+            Fire();
         }
         
     }
 
+    private void Fire() {
+        Debug.Log("Fired!");
+    }
+/*
     IEnumerator Fire() {
 
         while (light.localScale != lanternScaler) {
@@ -40,6 +45,6 @@ public class LanternShoot : MonoBehaviour {
 
 
     }
-
+*/
     
 }

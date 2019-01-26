@@ -11,12 +11,12 @@ public class PlayerMove : MonoBehaviour {
 
     public Vector3 fallAcceleration = new Vector3(0, -10, 0);
     public float jumpForce = 500;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     private int maxJumps = 3;
     private int jumpsUsed = 0;
 
     private void Start() {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update() {
@@ -62,16 +62,19 @@ public class PlayerMove : MonoBehaviour {
 
     }
     
-    private void OnCollisionEnter(Collision other) {
+    private void OnCollisionEnter2D(Collision2D other) {
         
         //check if other is the ground
         // not a platform
+        
+        Debug.Log(other.gameObject.layer);
+            
         if (other.gameObject.layer != 9)
             return; 
         
         //below platform
-        if (other.transform.position.y - transform.position.y > 0)
-            return;
+      //  if (other.transform.position.y - transform.position.y > 0)
+        //    return;
 
         OnLanded();
 
