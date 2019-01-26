@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour {
+public class Follow : MonoBehaviour {
 
     [SerializeField] private Transform _player;
     [SerializeField] private float _lerpSpeed = 1f;
