@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerRespawn : MonoBehaviour {
 
    public Vector3 checkPoint;
-   public float checkpointTimer;
+   public float checkpointTimer = 2f;
    
-   private void OnTriggerEnter(Collider other) {
+   private void OnTriggerEnter2D(Collider2D other) {
 
       if (other.gameObject.layer == 11) {
          transform.position = checkPoint;

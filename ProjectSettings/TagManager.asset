@@ -17,7 +17,7 @@ TagManager:
   - Ground
   - Player
   - Respawner
-  - 
+  - Projectile
   - 
   - 
   - 
@@ -38,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Particles
-    uniqueID: 2643812429
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -52,4 +49,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1820344601
+    locked: 0
+  - name: Particles
+    uniqueID: 2643812429
     locked: 0

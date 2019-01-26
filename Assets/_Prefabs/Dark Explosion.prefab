@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5515150101381726023}
   - component: {fileID: 7048446761928797845}
   - component: {fileID: 6229098792204047063}
+  - component: {fileID: 4875507940591801029}
   m_Layer: 0
   m_Name: Dark Explosion
   m_TagString: Untagged
@@ -69,7 +70,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1651154867
-  m_SortingLayer: -1
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_SortMode: 0
@@ -4756,3 +4757,16 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &4875507940591801029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6659099189454777614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7044f6dc694e8c8f80d060ecaabdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 2
