@@ -7,7 +7,7 @@ public class LanternShoot : MonoBehaviour {
     public Transform light;
     private Transform player;
 
-    public Vector3 lanternScaler;
+    public static Vector3 lanternScaler = new Vector3(5,3,3);
 
     private void Start() {
         player = Player.instance.transform;
@@ -25,11 +25,11 @@ public class LanternShoot : MonoBehaviour {
 
     IEnumerator Fire() {
 
-        light.localScale *= 2;
+        light.localScale += lanternScaler;
         
         yield return new WaitForSeconds(.1f);
 
-        light.localScale /= 2;
+        light.localScale -= lanternScaler;
 
     }
 
