@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Test : MonoBehaviour, IEnemyLogic
+public class Enemy_Test : MonoBehaviour, ITakeDamage
 {
     public float health = 1f;
 
