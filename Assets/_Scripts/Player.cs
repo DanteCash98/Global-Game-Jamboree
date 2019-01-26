@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     
+    [SerializeField] List <Mememtos> collectedMememtos;
     #region singleton
     
     public static Player instance { get; private set; }
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
         }
         else {
             instance = this;
+            collectedMememtos = new List<Mememtos>();
         }
         
     }
@@ -24,11 +26,17 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        GameObject other = col.GetComponent<GameObject>();
+        MonoBehaviour other = col.gameObject.GetComponent<MonoBehaviour>();
         if(other is IInteractable)
         {
-            IInteractable interactable = (IInteractable) gameObject.GetComponent(typeof(IInteractable));
+            IInteractable interactable = other as IInteractable;
             interactable.Interact();
         }
     }
+
+    public List<Mememtos> GetMememtos()
+    {
+        return collectedMememtos;
+    }
+
 }
