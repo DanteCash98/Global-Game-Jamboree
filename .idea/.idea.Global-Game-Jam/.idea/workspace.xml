@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b80a0b-5ff9-4d77-814d-d15395f5ed83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jam/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jam/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Main.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Background.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Background.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/IInteractable.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <marker date="1548476195469" expanded="false" signature="6:78" ph="..." />
                 <marker date="1548476195469" expanded="true" signature="110:135" ph="{...}" />
@@ -29,15 +27,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Item.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
                 <marker date="1548477655860" expanded="false" signature="6:78" ph="..." />
                 <marker date="1548477655860" expanded="true" signature="128:180" ph="{...}" />
                 <marker date="1548477655860" expanded="true" signature="157:178" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/_Scripts/LampBehavior.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+              <folding>
+                <marker date="1548485918757" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548485918757" expanded="true" signature="121:443" ph="{...}" />
+                <marker date="1548485918757" expanded="true" signature="201:252" ph="{...}" />
+                <marker date="1548485918757" expanded="true" signature="322:441" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -50,6 +63,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Scripts/LampBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Scripts/IInteractable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -58,6 +72,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/_Scripts/IInteractable.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/Item.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/LampBehavior.cs" />
       </list>
     </option>
   </component>
@@ -66,7 +81,7 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-95" />
     <option name="y" value="109" />
     <option name="width" value="1918" />
@@ -145,12 +160,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548475163767</updated>
       <workItem from="1548475178050" duration="440000" />
-      <workItem from="1548475664160" duration="3901000" />
+      <workItem from="1548475664160" duration="4916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4341000" />
+    <option name="totallyTimeSpent" value="5356000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -162,7 +177,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13326226" />
@@ -216,7 +231,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/IInteractable.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <marker date="1548476195469" expanded="false" signature="6:78" ph="..." />
             <marker date="1548476195469" expanded="true" signature="110:135" ph="{...}" />
@@ -240,11 +255,24 @@
     <entry file="file://$PROJECT_DIR$/Assets/_Scripts/Item.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
             <marker date="1548477655860" expanded="false" signature="6:78" ph="..." />
             <marker date="1548477655860" expanded="true" signature="128:180" ph="{...}" />
             <marker date="1548477655860" expanded="true" signature="157:178" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/_Scripts/LampBehavior.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <marker date="1548485918757" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548485918757" expanded="true" signature="121:443" ph="{...}" />
+            <marker date="1548485918757" expanded="true" signature="201:252" ph="{...}" />
+            <marker date="1548485918757" expanded="true" signature="322:441" ph="{...}" />
           </folding>
         </state>
       </provider>
