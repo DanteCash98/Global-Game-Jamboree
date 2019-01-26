@@ -21,6 +21,7 @@
           <e p="Item.cs" t="Include" />
           <e p="LanternShoot.cs" t="Include" />
           <e p="LightWeapon.cs" t="Include" />
+          <e p="MememtoGameObject.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />

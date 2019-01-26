@@ -15,7 +15,7 @@ public class PlayerRespawn : MonoBehaviour {
       
    }
 
-   private void OnCollisionStay(Collision other) {
+   private void OnCollisionStay2D(Collision2D other) {
 
       if (other.gameObject.layer == 9) {
          checkpointTimer += Time.deltaTime;
@@ -28,7 +28,7 @@ public class PlayerRespawn : MonoBehaviour {
       
    }
    
-   private void OnCollisionExit(Collision other) {
+   private void OnCollisionExit2D(Collision2D other) {
 
       if (other.gameObject.layer == 9) {
          checkpointTimer = 0;
