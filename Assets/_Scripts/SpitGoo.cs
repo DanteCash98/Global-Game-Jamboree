@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpitGoo : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class SpitGoo : MonoBehaviour, IInteractable {
+    
+    private PlayerMove player;
+    
+    void Start() {
+        player = Player.instance.GetComponent<PlayerMove>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    
+    public void Interact() {
+        //player.
     }
 }
