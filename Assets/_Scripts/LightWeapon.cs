@@ -10,10 +10,14 @@ public class LightWeapon : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log(other.name);
-        Debug.Log(other.GetComponent<ITakeDamage>());
+        //Debug.Log(other.name);
+       // Debug.Log(other.GetComponent<ITakeDamage>());
         if (other.GetComponent<ITakeDamage>() != null) {
             other.GetComponent<ITakeDamage>().TakeDamage(1);
+        }
+        if(other.gameObject.tag == "Platform")
+        {
+            Destroy(transform.parent.gameObject);
         }
     }
 }
