@@ -9,7 +9,9 @@ public class LightWeapon : MonoBehaviour
             GetComponent<MeshRenderer>().sortingLayerName = "Foreground";
     }
 
-    void OnTriggerEnter(Collider other) {
+    void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log(other.name);
+        Debug.Log(other.GetComponent<ITakeDamage>());
         if (other.GetComponent<ITakeDamage>() != null) {
             other.GetComponent<ITakeDamage>().TakeDamage(1);
         }

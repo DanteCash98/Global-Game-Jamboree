@@ -27,6 +27,7 @@
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
+          <e p="Spawner.cs" t="Include" />
           <e p="SutSpawner.cs" t="Include" />
         </e>
       </e>
