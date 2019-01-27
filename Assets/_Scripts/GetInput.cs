@@ -104,6 +104,14 @@ public static class GetInput {
         return false;
 
     }
+
+    public static bool Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+            return true;
+
+        return false;
+    }
     
     
     
