@@ -46,11 +46,12 @@ public class PlayerMove : MonoBehaviour {
             anim.SetBool("Running", false);
         }
         
-        transform.Translate(velocity * Time.deltaTime);
+        transform.Translate(velocity * Time.deltaTime);    
 
     }
 
     private void Jump() {
+        anim.SetBool("Jumping", true);
         Vector3 velocity = GetVerticalMovement(fallAcceleration);
         rb.AddForce(velocity);
     }
@@ -71,7 +72,16 @@ public class PlayerMove : MonoBehaviour {
         return acc;
 
     }
-    
+
+    private void OnCollisionStay2D(Collision2D other) {
+        
+        if(other.gameObject.layer != 9)
+            return;
+        
+        anim.SetBool("Jumping", false);
+
+    }
+
     private void OnCollisionEnter2D(Collision2D other) {
         
         //check if other is the ground
@@ -80,7 +90,7 @@ public class PlayerMove : MonoBehaviour {
         if(other.gameObject.layer != 9)
             return;
         
-        if (other.gameObject.layer == 9 && other.gameObject.transform.position.y > transform.position.y)
+        if (other.gameObject.layer == 9 && other.gameObject.transform.position.y  > transform.position.y +  transform.localScale.y)
            return; 
         
 
@@ -91,6 +101,7 @@ public class PlayerMove : MonoBehaviour {
    
 
     private void OnLanded() {
+        anim.SetBool("Jumping", false);
         jumpsUsed = 0;
     }
 }
