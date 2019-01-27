@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     
     #endregion
 
-    private void OnTriggerEnter(Collider col)
+    private void OnTriggerEnter2D(Collider2D col)
     {
         MonoBehaviour other = col.gameObject.GetComponent<MonoBehaviour>();
         if(other is IInteractable)
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
             IInteractable interactable = other as IInteractable;
             interactable.Interact();
         }
-    }
+    }   
 
     public List<Mememto> GetMememtos()
     {

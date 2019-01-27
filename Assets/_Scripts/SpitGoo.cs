@@ -12,8 +12,12 @@ public class SpitGoo : MonoBehaviour, IInteractable {
     void Start() {
         player = Player.instance.GetComponent<PlayerMove>();
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D other) {
+    }
+
     public void Interact() {
-       // StartCoroutine(player.Slow(slowAmount, slowDuration));
+        Debug.Log("SLOWING");
+        StartCoroutine(player.Slow(slowAmount, slowDuration));
     }
 }
