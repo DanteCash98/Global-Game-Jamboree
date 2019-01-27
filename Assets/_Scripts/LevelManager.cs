@@ -39,7 +39,7 @@ public class LevelManager : MonoBehaviour
         Debug.Log(BlackScreen == null);
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
             Color tempColor = BlackScreen.color;
-            tempColor.a = Mathf.Lerp(0.0f, 1.0f, timePassed);
+            tempColor.a = Mathf.Lerp(0.0f, 1.0f, (timePassed/fadeTime));
             BlackScreen.color = tempColor;
             yield return null;
         }
@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour
         BlackScreen = GetComponent<Image>();
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
             Color tempColor = BlackScreen.color;
-            tempColor.a = Mathf.Lerp(1.0f, 0.0f, timePassed);
+            tempColor.a = Mathf.Lerp(1.0f, 0.0f, (timePassed/fadeTime));
             BlackScreen.color = tempColor;
             yield return null;
         }

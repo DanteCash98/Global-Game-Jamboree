@@ -28,12 +28,15 @@ public class PlayerMove : MonoBehaviour {
     [SerializeField] private int dashCounter = 0;
     [SerializeField] private float timeGrounded = 0;
 
+    private AudioSource playerSource;
+
     public bool slow;
 
     
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        playerSource = GetComponent<AudioSource>();
         direction = 1;
         timeOnCurrentDash = dashTime;
     }
@@ -90,6 +93,8 @@ public class PlayerMove : MonoBehaviour {
                  rb.velocity = Vector2.left * dashCooldown;
             }
             dashing = true;
+            playerSource.clip = Resources.Load<AudioClip>("SFX/dash");
+            playerSource.Play();
             currentDashCooldown = dashCoolDown;
             if(jumpsUsed > 0)
                 dashCounter++;
@@ -131,6 +136,8 @@ public class PlayerMove : MonoBehaviour {
             timeGrounded = 0;
             rb.velocity = Vector3.zero;
             jumping = true;
+            playerSource.clip = Resources.Load<AudioClip>("SFX/Jump");
+            playerSource.Play();
             return acc + new Vector3(0,jumpForce);
         }
 

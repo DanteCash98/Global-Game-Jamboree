@@ -54,7 +54,7 @@ public class MusicManager : MonoBehaviour
         yield return null;
 
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
-            float vol = Mathf.Lerp(fullVol, noVol, timePassed);
+            float vol = Mathf.Lerp(fullVol, noVol, (timePassed/fadeTime));
          MainSource.volume = vol;
 
             yield return null;
@@ -67,7 +67,7 @@ public class MusicManager : MonoBehaviour
      MainSource.Play();
 
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
-            float vol = Mathf.Lerp(noVol, fullVol, timePassed);
+            float vol = Mathf.Lerp(noVol, fullVol, (timePassed/fadeTime));
          MainSource.volume = vol;
 
             yield return null;
@@ -79,8 +79,8 @@ public class MusicManager : MonoBehaviour
         yield return null;
 
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
-            float mainVol = Mathf.Lerp(fullVol, mainMixVol, timePassed);
-            float layerVol = Mathf.Lerp(noVol, layerMixVol, timePassed);
+            float mainVol = Mathf.Lerp(fullVol, mainMixVol, (timePassed/fadeTime));
+            float layerVol = Mathf.Lerp(noVol, layerMixVol, (timePassed/fadeTime));
             //Alternatively, fade out main and fade in layer 100% for crossfade
             MainSource.volume = mainVol;
             LayerSource.volume = layerVol;
