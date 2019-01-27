@@ -91,7 +91,7 @@ public class PlayerMove : MonoBehaviour {
             }
             dashing = true;
             currentDashCooldown = dashCoolDown;
-            if(timeGrounded <= 0)
+            if(jumpsUsed > 0)
                 dashCounter++;
         }
         else
