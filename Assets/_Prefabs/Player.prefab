@@ -114,6 +114,12 @@ MonoBehaviour:
   runAcceleration: 15
   fallAcceleration: {x: 0, y: -10, z: 0}
   jumpForce: 500
+  dashSpeed: 30
+  dashTime: 0.1
+  dashCoolDown: 1
+  currentDashCooldown: 0
+  dashCounter: 0
+  timeGrounded: 0
 --- !u!114 &708445864243077441
 MonoBehaviour:
   m_ObjectHideFlags: 0
