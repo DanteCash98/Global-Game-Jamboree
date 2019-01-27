@@ -8,7 +8,7 @@ public class FireflyCluster : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Firefly center collision");
-        other.gameObject.SendMessage("AddLight", 10f, SendMessageOptions.RequireReceiver);
+        other.gameObject.SendMessage("AddLight", -0.1f, SendMessageOptions.RequireReceiver);
 
     }
 }
