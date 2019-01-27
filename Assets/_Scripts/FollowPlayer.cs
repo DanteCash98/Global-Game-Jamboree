@@ -2,19 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Follow : MonoBehaviour {
+public class FollowPlayer : MonoBehaviour {
 
-    [SerializeField] private Transform _player;
-    [SerializeField] private float _lerpSpeed = 1f;
-    [SerializeField] private Vector3 _offset;
-    
-    void Update() {
-        transform.position = Vector3.Lerp(transform.position, _player.position + _offset, Time.deltaTime * _lerpSpeed);
+    private Transform player;
+
+    [SerializeField] private float lerpSpeed = 1f;
+    [SerializeField] private Vector3 offset;
+
+    private void Start() {
+        player = Player.instance.transform;
     }
+
+    void Update() {
+        
+       // Vector3 dir = player.
+        transform.position = Vector3.Lerp(transform.position, player.position + offset, Time.deltaTime * lerpSpeed);
+
+        if (GetInput.Forward()) {
+            offset.x = -1;
+        } else if (GetInput.Back()) {
+            offset.x = 1;
+        }
+        
+    } 
 
     [ContextMenu("Bake Offset")]
     private void BakeOffset() {
-        _offset = transform.position - _player.transform.position;
+        offset = transform.position - player.transform.position;
     }
     
 }
