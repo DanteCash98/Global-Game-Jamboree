@@ -44,7 +44,7 @@ public class PlayerMove : MonoBehaviour {
             anim.SetBool("Running", false);
         }
         
-        transform.Translate(velocity * Time.deltaTime);
+        transform.Translate(velocity * Time.deltaTime);    
 
     }
 

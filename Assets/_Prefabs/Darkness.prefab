@@ -4796,7 +4796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 6659099189454777614, guid: 3681560f0c3d34785848384027185685,
     type: 3}
-  lerpSpeed: 1
+  lerpSpeed: 0.65
   offset: {x: 0, y: 0, z: 0}
 --- !u!58 &631128429
 CircleCollider2D:
