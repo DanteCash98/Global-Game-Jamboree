@@ -9,6 +9,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Scripts" t="Include">
+          <e p="BadHouse.cs" t="Include" />
+          <e p="CroissantAI.cs" t="Include" />
           <e p="DarknessLook.cs" t="Include" />
           <e p="DarknessSut.cs" t="Include" />
           <e p="DestroyAfter.cs" t="Include" />

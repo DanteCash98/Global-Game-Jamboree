@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour, ITakeDamage {
 
     public float spawnWait = 3f;
-    public short spawnLimit = 5;
+  //  public short spawnLimit = 5;
 
     public GameObject prefab;
     public Vector3 range = Vector3.zero;
@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour, ITakeDamage {
 
     IEnumerator Spawn() {
 
-        while (spawned < spawnLimit) {
+     //   while (spawned < spawnLimit) {
 
             Vector3 spawnPos = transform.position;
             spawnPos += new Vector3(Random.Range(-range.x, range.x), Random.Range(-range.y, range.y),
@@ -34,7 +34,7 @@ public class Spawner : MonoBehaviour, ITakeDamage {
             
             yield return new WaitForSeconds(spawnWait);
 
-        }
+    //    }
         
         
     }

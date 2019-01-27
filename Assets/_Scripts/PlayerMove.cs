@@ -215,8 +215,8 @@ public class PlayerMove : MonoBehaviour {
         if(other.gameObject.layer != 9)
             return;
         
-        if (other.gameObject.layer == 9 && other.gameObject.transform.position.y  > transform.position.y +  transform.localScale.y)
-           return; 
+   //     if (other.gameObject.layer == 9 && other.gameObject.transform.position.y  > transform.position.y +  transform.localScale.y)
+     //      return; 
         
 
         OnLanded();

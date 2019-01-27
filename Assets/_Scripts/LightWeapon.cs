@@ -10,6 +10,11 @@ public class LightWeapon : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D other) {
+        //Debug.Log(other.name);
+       // Debug.Log(other.GetComponent<ITakeDamage>());
+       Debug.Log(other);
+       if (other.GetComponent<CroissantAI>())
+           Debug.Break();
         if (other.GetComponent<ITakeDamage>() != null) {
             other.GetComponent<ITakeDamage>().TakeDamage(10);
         }
