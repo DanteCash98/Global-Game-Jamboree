@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour {
 
     private Vector3 velocity;
+    private Animator anim;
 
     public float runSpeed = 2;
     public float runAcceleration = 0.01f;
@@ -17,6 +18,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void Update() {
@@ -27,14 +29,19 @@ public class PlayerMove : MonoBehaviour {
     void Run() {
         
         if (GetInput.Forward()) {
+            GetComponent<SpriteRenderer>().flipX = true;
             float xVelocity = Mathf.Clamp(velocity.x + runAcceleration * Time.deltaTime, 0, runSpeed);
             velocity = velocity.WithValues(x: xVelocity);
+            anim.SetBool("Running", true);
         } else if (GetInput.Back()) {
+            GetComponent<SpriteRenderer>().flipX = false;
             float xVelocity = Mathf.Clamp(velocity.x - runAcceleration * Time.deltaTime, -runSpeed, 0);
             velocity = velocity.WithValues(x: xVelocity);
+            anim.SetBool("Running", true);
         }
         else {
             velocity = velocity.Lerp(Vector3.zero, Time.deltaTime * 3);
+            anim.SetBool("Running", false);
         }
         
         transform.Translate(velocity * Time.deltaTime);

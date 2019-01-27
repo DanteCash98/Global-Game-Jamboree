@@ -6,11 +6,13 @@ public class PlayerRespawn : MonoBehaviour {
 
    public Vector3 checkPoint;
    public float checkpointTimer = 2f;
+
+   public float respawnWait = 2f;
    
    private void OnTriggerEnter2D(Collider2D other) {
 
       if (other.gameObject.layer == 11) {
-         transform.position = checkPoint;
+         StartCoroutine(Respawn());
       }
       
    }
@@ -33,6 +35,29 @@ public class PlayerRespawn : MonoBehaviour {
       if (other.gameObject.layer == 9) {
          checkpointTimer = 0;
       }
+      
+   }
+
+   IEnumerator Respawn() {
+
+      GetComponent<SpriteRenderer>().color = Color.clear;
+      float oldSpeed = GetComponent<PlayerMove>().runSpeed;
+      GetComponent<PlayerMove>().runSpeed = 0;
+      GetComponent<Rigidbody2D>().simulated = false;
+      
+      yield return new WaitForSeconds(respawnWait / 2);
+
+      while (transform.position != checkPoint) {
+         transform.position = transform.position.Lerp(checkPoint, 1);
+         yield return null;
+      }
+      
+      yield return new WaitForSeconds(respawnWait / 6);
+      
+      GetComponent<Rigidbody2D>().simulated = true;
+      GetComponent<SpriteRenderer>().color = Color.white;
+      GetComponent<PlayerMove>().runSpeed = oldSpeed;
+
       
    }
    
