@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5358966875987144742}
   - component: {fileID: 5358966875987144736}
   - component: {fileID: 5358966875987144743}
+  - component: {fileID: 2761907794885175259}
   m_Layer: 0
   m_Name: Firefly Cluster
   m_TagString: Untagged
@@ -72,6 +73,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2761907794885175259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358966875987144741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7044f6dc694e8c8f80d060ecaabdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 6
 --- !u!1 &5358966876884472571
 GameObject:
   m_ObjectHideFlags: 0
