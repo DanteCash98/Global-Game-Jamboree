@@ -7,6 +7,7 @@ public class MusicManager : MonoBehaviour
     
     #region singleton
     public static MusicManager instance { get; private set; }
+    public AudioSource IntroSource;
     public AudioSource MainSource;
     public AudioSource LayerSource;
     private bool paused;
@@ -18,7 +19,8 @@ public class MusicManager : MonoBehaviour
     private float layerMixVol = 0.4f;
 
     private void Awake(){
-     MainSource = GetComponent<AudioSource>();
+     MainSource = GameObject.Find("AudioMain").GetComponent<AudioSource>();
+     IntroSource = GameObject.Find("AudioIntro").GetComponent<AudioSource>();
         paused = false;
         if (instance != null){
             Destroy(gameObject);
@@ -30,6 +32,12 @@ public class MusicManager : MonoBehaviour
     }
 
     #endregion
+
+    public void OnTriggerEnter2D(Collider2D other){
+        if (other.gameObject.layer == 10){
+            StartCoroutine("MusicSwap", "Songs/Meminto_Level_Full_NoIntro");
+        }
+    }
 
     public void Play(string name){
      MainSource.clip = Resources.Load<AudioClip>(name);
@@ -53,22 +61,34 @@ public class MusicManager : MonoBehaviour
         string _songname = songname;
         yield return null;
 
-        for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
+        if (IntroSource.isPlaying){
+            for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
             float vol = Mathf.Lerp(fullVol, noVol, (timePassed/fadeTime));
-         MainSource.volume = vol;
+            IntroSource.volume = vol;
 
             yield return null;
+            }
+        }
+        else {
+
+            for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
+                float vol = Mathf.Lerp(fullVol, noVol, (timePassed/fadeTime));
+                MainSource.volume = vol;
+
+                yield return null;
+            }
         }
 
         yield return new WaitForSeconds(0.5f);
 
-     MainSource.Stop();
-     MainSource.clip = Resources.Load<AudioClip>(_songname);
-     MainSource.Play();
+    IntroSource.Stop();
+    MainSource.Stop();
+    MainSource.clip = Resources.Load<AudioClip>(_songname);
+    MainSource.Play();
 
         for (float timePassed = 0; timePassed < fadeTime; timePassed += Time.deltaTime){
             float vol = Mathf.Lerp(noVol, fullVol, (timePassed/fadeTime));
-         MainSource.volume = vol;
+            MainSource.volume = vol;
 
             yield return null;
         }

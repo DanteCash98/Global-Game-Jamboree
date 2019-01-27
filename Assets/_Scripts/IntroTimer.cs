@@ -21,7 +21,7 @@ public class IntroTimer : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= 22.588f && !start){
+        if (timer >= 89.454f && !start){
             mainSource.Play();
             start = true;
         }
