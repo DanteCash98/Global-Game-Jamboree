@@ -10,6 +10,7 @@ public class Toad : MonoBehaviour, ITakeDamage {
 
     private Animator anim;
     private Transform gooSpout, waterSpout;
+    private AudioSource toadSource;
 
     public GameObject goo;
     public GameObject water;
@@ -18,6 +19,7 @@ public class Toad : MonoBehaviour, ITakeDamage {
         anim = GetComponent<Animator>();
         gooSpout = transform.Find("Goo Spout");
         waterSpout = transform.Find("Water Spout");
+        toadSource = GetComponent<AudioSource>();
 
         StartCoroutine(Spit());
     }
@@ -56,6 +58,7 @@ public class Toad : MonoBehaviour, ITakeDamage {
 
     public void SpitGoo() {
 
+        toadSource.Play();
         GameObject instance = Instantiate(goo, gooSpout.position, Quaternion.identity);
         instance.transform.localScale = instance.transform.localScale.WithValues(x: Random.Range(.8f, 1.2f));
 
