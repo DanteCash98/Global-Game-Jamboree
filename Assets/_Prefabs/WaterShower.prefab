@@ -3477,7 +3477,7 @@ ParticleSystem:
     enabled: 1
     serializedVersion: 3
     type: 1
-    collisionMode: 0
+    collisionMode: 1
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
@@ -14061,6 +14061,7 @@ GameObject:
   - component: {fileID: 6529657600113306597}
   - component: {fileID: 6529657600113332805}
   - component: {fileID: 4498162262689043216}
+  - component: {fileID: 7869822214511165246}
   m_Layer: 0
   m_Name: WaterShower
   m_TagString: Untagged
@@ -14075,8 +14076,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6529657600093549195}
-  m_LocalRotation: {x: 0.08879285, y: -0.7015097, z: 0.08879285, w: 0.7015097}
-  m_LocalPosition: {x: 21.01365, y: 3.3, z: 0}
+  m_LocalRotation: {x: 0.07504773, y: -0.70311296, z: 0.07504773, w: 0.70311296}
+  m_LocalPosition: {x: 21.0069, y: 3.3285694, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6529657600093908645}
@@ -14084,7 +14085,7 @@ Transform:
   - {fileID: 6529657600093908647}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 14.428, y: -90.00001, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.185, y: -90.00001, z: 0}
 --- !u!198 &6529657600113306597
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -18653,8 +18654,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1651154867
-  m_SortingLayer: 4
+  m_SortingLayerID: 1820344601
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_RenderMode: 1
   m_SortMode: 0
@@ -18692,3 +18693,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 5
+--- !u!114 &7869822214511165246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6529657600093549195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fabb5309c29b24224a21f6c6e8bfd91e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 1
+  y: 0
+  z: 0
+  continuous: 1
+  rotateWait: 1
+  radius: 75

@@ -37,10 +37,10 @@ public class Toad : MonoBehaviour, ITakeDamage {
             
             yield return new WaitForSeconds(Random.Range(attackCooldown / 2, attackCooldown * 2));
 
-            if (Random.value > .4f)
+            if (Random.value > .6f)
                 anim.SetTrigger("SpitGoo");
-            else 
-                anim.SetTrigger("SpitWater");
+           // else 
+              //  anim.SetTrigger("SpitWater");
             
         }
         
@@ -50,13 +50,13 @@ public class Toad : MonoBehaviour, ITakeDamage {
     public void SpitGoo() {
 
         GameObject instance = Instantiate(goo, gooSpout.position, Quaternion.identity);
-        instance.transform.localScale = instance.transform.localScale.WithValues(x: Random.Range(.5f, 1.5f));
+        instance.transform.localScale = instance.transform.localScale.WithValues(x: Random.Range(.8f, 1.2f));
 
     }
 
     public void SpitWater() {
 
-        Instantiate(water, waterSpout.position, Quaternion.identity, waterSpout);
+        Instantiate(water, waterSpout.position, waterSpout.rotation, waterSpout);
 
     }
 
