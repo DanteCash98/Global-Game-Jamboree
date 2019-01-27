@@ -113,6 +113,12 @@ public static class GetInput {
         return false;
     }
     
-    
+    public static bool DashUp()
+    {
+        if (Input.GetKeyDown(KeyCode.M) && Input.GetKeyDown(KeyCode.UpArrow))
+            return true;
+
+        return false;
+    }
     
 }

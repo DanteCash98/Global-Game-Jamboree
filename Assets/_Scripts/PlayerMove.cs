@@ -18,15 +18,16 @@ public class PlayerMove : MonoBehaviour {
     private int jumpsUsed = 0;
     private bool jumping = false;
     [FormerlySerializedAs("dashSpeed")] 
-    [SerializeField] private float dashCooldown;
-    [SerializeField] private float dashTime;
-    [SerializeField] private float dashCoolDown;
+    [SerializeField] private float dashSpeed; //speed of dash
+    [SerializeField] private float dashTime; //how long dash is
+    [SerializeField] private float dashCoolDown; //cd of dash before can dash again
     [SerializeField] private float currentDashCooldown;
     bool dashing;
     private int direction;
     private float timeOnCurrentDash;
     [SerializeField] private int dashCounter = 0;
     [SerializeField] private float timeGrounded = 0;
+    [SerializeField] private bool dashUp = false;
 
     public bool slow;
 
@@ -78,22 +79,34 @@ public class PlayerMove : MonoBehaviour {
     private void Dash()
     {
 
-        if(GetInput.Dash() && CanDash())
+        if(!GetInput.DashUp() && GetInput.Dash() && CanDash())
         {
             if(direction == 1)
             {
-                 rb.velocity = Vector2.right * dashCooldown;
+                 rb.velocity = Vector2.right * dashSpeed;
             }
             else if(direction == -1)
             {
                 
-                 rb.velocity = Vector2.left * dashCooldown;
+                 rb.velocity = Vector2.left * dashSpeed;
             }
             dashing = true;
             currentDashCooldown = dashCoolDown;
             if(jumpsUsed > 0)
                 dashCounter++;
         }
+        else if(GetInput.DashUp() && CanDash())
+         {
+             Debug.Log("hello");
+             rb.velocity = Vector2.up * dashSpeed;
+             dashing = true;
+             currentDashCooldown = dashCoolDown;
+             if(jumpsUsed > 0)
+             {
+                dashCounter++;
+             }
+             dashUp = true;
+         }
         else
         {
             if(dashing)
@@ -103,7 +116,9 @@ public class PlayerMove : MonoBehaviour {
             else
             {
                 if(currentDashCooldown >= 0)
+                {
                     currentDashCooldown -= Time.deltaTime;
+                }
             }
 
             if(timeOnCurrentDash <= 0)
@@ -114,11 +129,13 @@ public class PlayerMove : MonoBehaviour {
             }
         }
 
+         
+
     }
 
     private bool CanDash()
     {
-        return (currentDashCooldown <= 0 && ((jumpsUsed > 0 && dashCounter == 0) || jumpsUsed == 0));
+        return (!dashUp && currentDashCooldown <= 0 && ((jumpsUsed > 0 && dashCounter == 0) || jumpsUsed == 0));
     }  
     //adds _force to velocity
     public Vector3 GetVerticalMovement(Vector3 acc) {
@@ -126,10 +143,17 @@ public class PlayerMove : MonoBehaviour {
         if (jumpsUsed >= maxJumps)
             return acc;
         
-        if (GetInput.Up()) {
+        if (!GetInput.DashUp() && GetInput.Up()) {
             jumpsUsed++;
             timeGrounded = 0;
             rb.velocity = Vector3.zero;
+            jumping = true;
+            return acc + new Vector3(0,jumpForce);
+        }
+        else if(GetInput.DashUp())
+        {
+            jumpsUsed++;
+            timeGrounded = 0;
             jumping = true;
             return acc + new Vector3(0,jumpForce);
         }
@@ -149,14 +173,14 @@ public class PlayerMove : MonoBehaviour {
 
             originalSpeed = runSpeed;
             originalAcceleration = runAcceleration;
-            originalDashCooldown = dashCooldown;
+            originalDashCooldown = dashCoolDown;
             originalGravity = gravity;
             
             slow = true;
             
             runSpeed /= scalar;
             runAcceleration /= scalar;
-            dashCooldown *= scalar;
+            dashCoolDown *= scalar;
             gravity *= scalar;
         }
 
@@ -166,7 +190,7 @@ public class PlayerMove : MonoBehaviour {
         
         runSpeed = originalSpeed;
         runAcceleration = originalAcceleration;
-        dashCooldown = originalDashCooldown;
+        dashCoolDown = originalDashCooldown;
         gravity = originalGravity;
 
     }
@@ -205,5 +229,6 @@ public class PlayerMove : MonoBehaviour {
         anim.SetBool("Jumping", false);
         dashCounter = 0;
         jumpsUsed = 0;
+        dashUp = false;
     }
 }
