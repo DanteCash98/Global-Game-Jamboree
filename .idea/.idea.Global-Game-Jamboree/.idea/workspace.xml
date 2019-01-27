@@ -1,94 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d39b54ae-d604-4c95-a960-c7773f68de13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall001.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall002.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall003.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/Colored jump/JumpFall004.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad000.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad001.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad001.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad002.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad003.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad003.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad004.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad005.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad006.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad006.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad007.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad008.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad009.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad009.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad010.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad010.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad011.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad011.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad012.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad012.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad013.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad014.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad014.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad015.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad015.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad016.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad016.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad017.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad017.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad018.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad018.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad019.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad019.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad020.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad020.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad021.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad021.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad022.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad022.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad023.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad023.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad024.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad024.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad025.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad025.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad026.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad026.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad027.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad027.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad028.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad028.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad029.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad029.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad030.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad030.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad031.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Design/Sprites/toad idle/IdleToad031.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jamboree/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jamboree/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jamboree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Global-Game-Jamboree/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Design/Animation/Player/_Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Design/Animation/Player/_Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Design/Sprites/Run/EndRun.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Design/Sprites/Run/EndRun.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene/sandbox.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Main.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Air.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Air.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Design/Animation/Player/Jump.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Jump.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Design/Animation/Player/Jump.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/PlayerMove.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d39b54ae-d604-4c95-a960-c7773f68de13" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,11 +102,11 @@
             <state relative-caret-position="144">
               <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
               <folding>
-                <marker date="1548554857621" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548554857621" expanded="true" signature="120:547" ph="{...}" />
-                <marker date="1548554857621" expanded="true" signature="148:279" ph="{...}" />
-                <marker date="1548554857621" expanded="true" signature="325:545" ph="{...}" />
-                <marker date="1548554857621" expanded="true" signature="467:539" ph="{...}" />
+                <marker date="1548563897598" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548563897598" expanded="true" signature="120:668" ph="{...}" />
+                <marker date="1548563897598" expanded="true" signature="148:279" ph="{...}" />
+                <marker date="1548563897598" expanded="true" signature="325:666" ph="{...}" />
+                <marker date="1548563897598" expanded="true" signature="648:660" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -431,12 +344,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548476427838</updated>
-      <workItem from="1548476433052" duration="28415000" />
+      <workItem from="1548476433052" duration="28979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28415000" />
+    <option name="totallyTimeSpent" value="28979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,11 +595,11 @@
         <state relative-caret-position="144">
           <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
-            <marker date="1548554857621" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548554857621" expanded="true" signature="120:547" ph="{...}" />
-            <marker date="1548554857621" expanded="true" signature="148:279" ph="{...}" />
-            <marker date="1548554857621" expanded="true" signature="325:545" ph="{...}" />
-            <marker date="1548554857621" expanded="true" signature="467:539" ph="{...}" />
+            <marker date="1548563897598" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548563897598" expanded="true" signature="120:668" ph="{...}" />
+            <marker date="1548563897598" expanded="true" signature="148:279" ph="{...}" />
+            <marker date="1548563897598" expanded="true" signature="325:666" ph="{...}" />
+            <marker date="1548563897598" expanded="true" signature="648:660" ph="{...}" />
           </folding>
         </state>
       </provider>

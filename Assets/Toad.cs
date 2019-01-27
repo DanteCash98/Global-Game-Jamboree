@@ -20,6 +20,16 @@ public class Toad : MonoBehaviour, ITakeDamage {
 
     }
 
+    public void SpitGoo() {
+        
+        anim.SetTrigger("Spit");
+        
+    }
+
+    public void SpitWater() {
+        
+    }
+
     private void Die() {
         
     }
