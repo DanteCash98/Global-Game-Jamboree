@@ -15,6 +15,7 @@ public class FollowPlayer : MonoBehaviour {
 
     void Update() {
         
+       // Vector3 dir = player.
         transform.position = Vector3.Lerp(transform.position, player.position + offset, Time.deltaTime * lerpSpeed);
 
         if (GetInput.Forward()) {
