@@ -138,8 +138,6 @@ public class PlayerMove : MonoBehaviour {
 
     public IEnumerator Slow(float scalar, float duration) {
 
-        Debug.Break();
-        
         float originalSpeed = runSpeed;
         float originalAcceleration = runAcceleration;
         float originalDashCooldown = dashCooldown;
@@ -148,7 +146,7 @@ public class PlayerMove : MonoBehaviour {
         runSpeed /= scalar;
         runAcceleration /= scalar;
         dashCooldown *= scalar;
-        gravity /= scalar;
+        gravity *= scalar;
         
         yield return new WaitForSeconds(duration);
 
