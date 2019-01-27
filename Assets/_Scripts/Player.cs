@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     
     #endregion
 
+    public bool invulnerable = false;
+    
     private void OnTriggerEnter2D(Collider2D col)
     {
         MonoBehaviour other = col.gameObject.GetComponent<MonoBehaviour>();

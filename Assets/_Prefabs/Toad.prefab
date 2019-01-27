@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5346859446743091326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.73, y: 0.3, z: 0.92}
+  m_LocalPosition: {x: -13.24, y: 0.3, z: 0.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5346859447580151694}
@@ -44,8 +44,12 @@ GameObject:
   - component: {fileID: 5346859447580151680}
   - component: {fileID: 5346859447580151695}
   - component: {fileID: 5346859447580151681}
+<<<<<<< HEAD
   - component: {fileID: 4301050617193129694}
   m_Layer: 0
+=======
+  m_Layer: 14
+>>>>>>> 57ed81b2d21f49613f08fdd6f3f7d7b25100556f
   m_Name: Toad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,8 +106,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1820344601
-  m_SortingLayer: 3
+  m_SortingLayerID: 719498841
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ed9222a0cf7b246d7a8a05a8014d66b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

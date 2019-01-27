@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 708445864243077440}
   - component: {fileID: 708445864243077443}
   - component: {fileID: 708445864243077444}
+  - component: {fileID: 708445864243077445}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectedMememtos: 
+  invulnerable: 0
 --- !u!114 &708445864243077454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,14 +114,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 10
   runAcceleration: 15
-  fallAcceleration: {x: 0, y: -10, z: 0}
+  gravity: {x: 0, y: -10, z: 0}
   jumpForce: 500
-  dashSpeed: 30
+  dashCooldown: 30
   dashTime: 0.1
   dashCoolDown: 1
   currentDashCooldown: 0
   dashCounter: 0
   timeGrounded: 0
+  slow: 0
 --- !u!114 &708445864243077441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +138,8 @@ MonoBehaviour:
   checkPoint: {x: 0, y: 0, z: 0}
   checkpointTimer: 2
   respawnWait: 1
+  invlunerabilityTimer: 4
+  timer: 0
 --- !u!61 &708445864243077440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,3 +206,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &708445864243077445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708445864243077442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9702f954b8faf248a53fef6d9bdd634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lamp: {fileID: 0}
+  lamplight: 1
