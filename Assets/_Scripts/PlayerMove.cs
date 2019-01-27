@@ -28,6 +28,8 @@ public class PlayerMove : MonoBehaviour {
     [SerializeField] private int dashCounter = 0;
     [SerializeField] private float timeGrounded = 0;
 
+    public bool slow;
+
     
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -135,21 +137,33 @@ public class PlayerMove : MonoBehaviour {
         return acc;
 
     }
+    
+    float originalSpeed;
+    float originalAcceleration;
+    float originalDashCooldown;
+    Vector3 originalGravity;
 
     public IEnumerator Slow(float scalar, float duration) {
 
-        float originalSpeed = runSpeed;
-        float originalAcceleration = runAcceleration;
-        float originalDashCooldown = dashCooldown;
-        Vector3 originalGravity = gravity;
+        if (!slow) {
 
-        runSpeed /= scalar;
-        runAcceleration /= scalar;
-        dashCooldown *= scalar;
-        gravity *= scalar;
-        
+            originalSpeed = runSpeed;
+            originalAcceleration = runAcceleration;
+            originalDashCooldown = dashCooldown;
+            originalGravity = gravity;
+            
+            slow = true;
+            
+            runSpeed /= scalar;
+            runAcceleration /= scalar;
+            dashCooldown *= scalar;
+            gravity *= scalar;
+        }
+
         yield return new WaitForSeconds(duration);
 
+        slow = false;
+        
         runSpeed = originalSpeed;
         runAcceleration = originalAcceleration;
         dashCooldown = originalDashCooldown;
