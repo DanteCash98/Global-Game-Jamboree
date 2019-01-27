@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerMove : MonoBehaviour {
 
@@ -10,13 +10,15 @@ public class PlayerMove : MonoBehaviour {
     public float runSpeed = 2;
     public float runAcceleration = 0.01f;
 
-    public Vector3 fallAcceleration = new Vector3(0, -10, 0);
+    [FormerlySerializedAs("fallAcceleration")] 
+    public Vector3 gravity = new Vector3(0, -10, 0);
     public float jumpForce = 500;
     private Rigidbody2D rb;
     private int maxJumps = 3;
     private int jumpsUsed = 0;
     private bool jumping = false;
-    [SerializeField] private float dashSpeed;
+    [FormerlySerializedAs("dashSpeed")] 
+    [SerializeField] private float dashCooldown;
     [SerializeField] private float dashTime;
     [SerializeField] private float dashCoolDown;
     [SerializeField] private float currentDashCooldown;
@@ -26,11 +28,7 @@ public class PlayerMove : MonoBehaviour {
     [SerializeField] private int dashCounter = 0;
     [SerializeField] private float timeGrounded = 0;
 
-
     
-
-
-
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -71,7 +69,7 @@ public class PlayerMove : MonoBehaviour {
 
     private void Jump() {
         anim.SetBool("Jumping", true);
-        Vector3 velocity = GetVerticalMovement(fallAcceleration);
+        Vector3 velocity = GetVerticalMovement(gravity);
         rb.AddForce(velocity);
     }
 
@@ -82,12 +80,12 @@ public class PlayerMove : MonoBehaviour {
         {
             if(direction == 1)
             {
-                 rb.velocity = Vector2.right * dashSpeed;
+                 rb.velocity = Vector2.right * dashCooldown;
             }
             else if(direction == -1)
             {
                 
-                 rb.velocity = Vector2.left * dashSpeed;
+                 rb.velocity = Vector2.left * dashCooldown;
             }
             dashing = true;
             currentDashCooldown = dashCoolDown;
@@ -135,6 +133,29 @@ public class PlayerMove : MonoBehaviour {
         }
 
         return acc;
+
+    }
+
+    public IEnumerator Slow(float scalar, float duration) {
+
+        Debug.Break();
+        
+        float originalSpeed = runSpeed;
+        float originalAcceleration = runAcceleration;
+        float originalDashCooldown = dashCooldown;
+        Vector3 originalGravity = gravity;
+
+        runSpeed /= scalar;
+        runAcceleration /= scalar;
+        dashCooldown *= scalar;
+        gravity /= scalar;
+        
+        yield return new WaitForSeconds(duration);
+
+        runSpeed = originalSpeed;
+        runAcceleration = originalAcceleration;
+        dashCooldown = originalDashCooldown;
+        gravity = originalGravity;
 
     }
 
