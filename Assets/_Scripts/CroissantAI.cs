@@ -40,6 +40,7 @@ public class CroissantAI : MonoBehaviour, ITakeDamage
 
     public void TakeDamage(float damage)
     {
+        Destroy(gameObject);
         Debug.Log("Croissant: Damage Taken");
         health -= damage;
         if (health <= 0)
