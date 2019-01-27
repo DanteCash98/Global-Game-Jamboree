@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour, ITakeDamage {
 
     IEnumerator Spawn() {
 
-     //   while (spawned < spawnLimit) {
+        while (true) {
 
             Vector3 spawnPos = transform.position;
             spawnPos += new Vector3(Random.Range(-range.x, range.x), Random.Range(-range.y, range.y),
@@ -34,7 +34,7 @@ public class Spawner : MonoBehaviour, ITakeDamage {
             
             yield return new WaitForSeconds(spawnWait);
 
-    //    }
+       }
         
         
     }

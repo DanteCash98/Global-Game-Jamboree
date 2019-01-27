@@ -13,11 +13,11 @@ public class BadHouse : MonoBehaviour {
     }
 
     void Update() {
-        
-        if (player.position.x - house.position.x < 0)
+
+        if (player.position.x - house.position.x > 0) {
             if (!house.gameObject.activeSelf)
                 house.gameObject.SetActive(true);
-        else 
+        }else
             if (house.gameObject.activeSelf)
                 house.gameObject.SetActive(false);
         
