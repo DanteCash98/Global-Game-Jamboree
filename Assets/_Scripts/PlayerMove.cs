@@ -14,6 +14,8 @@ public class PlayerMove : MonoBehaviour {
     private Rigidbody2D rb;
     private int maxJumps = 3;
     private int jumpsUsed = 0;
+    
+    private bool jumping = false;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -55,6 +57,7 @@ public class PlayerMove : MonoBehaviour {
         if (GetInput.Up()) {
             jumpsUsed++;
             rb.velocity = Vector3.zero;
+            jumping = true;
             return acc + new Vector3(0,jumpForce);
         }
 
@@ -67,18 +70,19 @@ public class PlayerMove : MonoBehaviour {
         //check if other is the ground
         // not a platform
         
-        Debug.Log(other.gameObject.layer);
-            
-        if (other.gameObject.layer != 9)
-            return; 
+        if(other.gameObject.layer != 9)
+            return;
         
-        //below platform
-      //  if (other.transform.position.y - transform.position.y > 0)
-        //    return;
+        if (other.gameObject.layer == 9 && rb.velocity.y >= 0 && jumpsUsed > 0)
+        {
+           return; 
+        }
 
         OnLanded();
 
     }
+
+   
 
     private void OnLanded() {
         jumpsUsed = 0;
