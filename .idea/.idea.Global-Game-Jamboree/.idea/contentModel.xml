@@ -17,6 +17,7 @@
             <e p="TransformExtensions.cs" t="Include" />
             <e p="Vector3Extensions.cs" t="Include" />
           </e>
+          <e p="FireflyCluster.cs" t="Include" />
           <e p="FollowPlayer.cs" t="Include" />
           <e p="GetInput.cs" t="Include" />
           <e p="IInteractable.cs" t="Include" />
@@ -26,9 +27,11 @@
           <e p="LightWeapon.cs" t="Include" />
           <e p="MememtoGameObject.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="PlayerLight.cs" t="Include" />
           <e p="PlayerMove.cs" t="Include" />
           <e p="PlayerRespawn.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
+          <e p="RotateRandom.cs" t="Include" />
           <e p="Spawner.cs" t="Include" />
           <e p="SpitGoo.cs" t="Include" />
           <e p="SutSpawner.cs" t="Include" />

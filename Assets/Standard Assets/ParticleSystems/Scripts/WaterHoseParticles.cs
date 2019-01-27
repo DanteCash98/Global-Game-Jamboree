@@ -24,23 +24,12 @@ namespace UnityStandardAssets.Effects
         {
             int numCollisionEvents = m_ParticleSystem.GetCollisionEvents(other, m_CollisionEvents);
             int i = 0;
-
+            
             while (i < numCollisionEvents)
             {
-                if (Time.time > lastSoundTime + 0.2f)
-                {
-                    lastSoundTime = Time.time;
-                }
 
-                var col = m_CollisionEvents[i].colliderComponent;
-                var attachedRigidbody = col.GetComponent<Rigidbody>();
-                if (attachedRigidbody != null)
-                {
-                    Vector3 vel = m_CollisionEvents[i].velocity;
-                    attachedRigidbody.AddForce(vel*force, ForceMode.Impulse);
-                }
-
-                other.BroadcastMessage("Extinguish", SendMessageOptions.DontRequireReceiver);
+                Debug.Log(other.name);
+                other.BroadcastMessage("AddLight", -.2f, SendMessageOptions.DontRequireReceiver);
 
                 i++;
             }
