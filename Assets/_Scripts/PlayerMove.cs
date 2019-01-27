@@ -80,10 +80,9 @@ public class PlayerMove : MonoBehaviour {
         if(other.gameObject.layer != 9)
             return;
         
-        if (other.gameObject.layer == 9 && rb.velocity.y >= 0 && jumpsUsed > 0)
-        {
+        if (other.gameObject.layer == 9 && other.gameObject.transform.position.y > transform.position.y)
            return; 
-        }
+        
 
         OnLanded();
 
