@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CroissantAI : MonoBehaviour, ITakeDamage
+public class Grub : MonoBehaviour, ITakeDamage
 {
     public float speed = 2f;
     public GameObject player;
@@ -35,7 +35,7 @@ public class CroissantAI : MonoBehaviour, ITakeDamage
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        other.gameObject.SendMessage("AddLight", -0.1f,SendMessageOptions.RequireReceiver);
+        other.gameObject.SendMessage("AddLight", -0.1f,SendMessageOptions.DontRequireReceiver);
     }
 
     public void TakeDamage(float damage)
