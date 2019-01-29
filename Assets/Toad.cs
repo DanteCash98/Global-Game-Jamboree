@@ -25,6 +25,7 @@ public class Toad : MonoBehaviour, ITakeDamage {
     }
     
     public void TakeDamage(float damage) {
+        
         health -= damage;
 
         if (health <= 0)
@@ -32,6 +33,12 @@ public class Toad : MonoBehaviour, ITakeDamage {
 
     }
 
+    private void OnTakeDamage() {
+        
+        GetComponent<SpriteRenderer>().color = Color.Lerp(GetComponent<SpriteRenderer>().color, new Color(120, 0, 255), 100 / health);
+        
+    }
+    
     IEnumerator Spit() {
 
 
@@ -64,7 +71,11 @@ public class Toad : MonoBehaviour, ITakeDamage {
     }
 
     private void Die() {
-        
+        anim.SetBool("Dead", true);
+    }
+
+    public void OnDied() {
+        Destroy(gameObject);
     }
     
 }

@@ -8,8 +8,19 @@ public class PlayerRespawn : MonoBehaviour {
    public float checkpointTimer = 2f;
 
    public float respawnWait = 2f;
+   public float invlunerabilityTimer = 5f;
+
+   private float deathTimer;
+   
+   void Update() {
+      deathTimer += Time.deltaTime;
+   }
    
    private void OnTriggerEnter2D(Collider2D other) {
+
+      if (deathTimer < invlunerabilityTimer) {
+         return;
+      }
 
       if (other.gameObject.layer == 11) {
          StartCoroutine(Respawn());
@@ -40,6 +51,8 @@ public class PlayerRespawn : MonoBehaviour {
 
    IEnumerator Respawn() {
 
+      deathTimer = 0;
+      
       GetComponent<SpriteRenderer>().color = Color.clear;
       float oldSpeed = GetComponent<PlayerMove>().runSpeed;
       GetComponent<PlayerMove>().runSpeed = 0;
@@ -60,6 +73,5 @@ public class PlayerRespawn : MonoBehaviour {
 
       
    }
-   
    
 }

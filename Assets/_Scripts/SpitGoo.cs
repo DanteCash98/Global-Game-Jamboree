@@ -17,7 +17,6 @@ public class SpitGoo : MonoBehaviour, IInteractable {
     }
 
     public void Interact() {
-        Debug.Log("SLOWING");
         StartCoroutine(player.Slow(slowAmount, slowDuration));
     }
 }

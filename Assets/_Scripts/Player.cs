@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     //all available mememtos in game
     public enum Mememto {Shovel, Axe};
     public List<Mememto> collectedMememtos;
+    
     #region singleton
     
     public static Player instance { get; private set; }

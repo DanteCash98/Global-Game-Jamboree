@@ -122,6 +122,7 @@ MonoBehaviour:
   currentDashCooldown: 0
   dashCounter: 0
   timeGrounded: 0
+  dashUp: 0
   slow: 0
 --- !u!114 &708445864243077441
 MonoBehaviour:

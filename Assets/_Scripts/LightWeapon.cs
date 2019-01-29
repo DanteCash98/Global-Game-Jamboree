@@ -12,10 +12,13 @@ public class LightWeapon : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         //Debug.Log(other.name);
        // Debug.Log(other.GetComponent<ITakeDamage>());
+       Debug.Log(other);
+       if (other.GetComponent<CroissantAI>())
+           Debug.Break();
         if (other.GetComponent<ITakeDamage>() != null) {
-            other.GetComponent<ITakeDamage>().TakeDamage(1);
+            other.GetComponent<ITakeDamage>().TakeDamage(10);
         }
-        if(other.gameObject.tag == "Platform")
+        if(other.gameObject.layer == 13 || other.gameObject.layer == 14)
         {
             Destroy(transform.parent.gameObject);
         }
