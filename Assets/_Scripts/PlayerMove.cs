@@ -10,14 +10,12 @@ public class PlayerMove : MonoBehaviour {
     public float runSpeed = 2;
     public float runAcceleration = 0.01f;
 
-    [FormerlySerializedAs("fallAcceleration")] 
     public Vector3 gravity = new Vector3(0, -10, 0);
     public float jumpForce = 500;
     private Rigidbody2D rb;
     private int maxJumps = 3;
     private int jumpsUsed = 0;
     private bool jumping = false;
-    [FormerlySerializedAs("dashSpeed")] 
     [SerializeField] private float dashSpeed; //speed of dash
     [SerializeField] private float dashTime; //how long dash is
     [SerializeField] private float dashCoolDown; //cd of dash before can dash again
