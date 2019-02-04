@@ -41,6 +41,7 @@
           <e p="Spawner.cs" t="Include" />
           <e p="SpitGoo.cs" t="Include" />
           <e p="SutSpawner.cs" t="Include" />
+          <e p="Toad.cs" t="Include" />
         </e>
         <e p="PostProcessing" t="Include">
           <e p="Editor" t="Include">
@@ -203,7 +204,6 @@
             </e>
           </e>
         </e>
-        <e p="Toad.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="Meminto.sln" t="IncludeFlat" />

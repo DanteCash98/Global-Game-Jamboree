@@ -174,29 +174,31 @@ public class PlayerMove : MonoBehaviour {
 
     public IEnumerator Slow(float scalar, float duration) {
 
-        if (!slow) {
+        yield return null;
 
-            originalSpeed = runSpeed;
-            originalAcceleration = runAcceleration;
-            originalDashCooldown = dashCoolDown;
-            originalGravity = gravity;
-            
-            slow = true;
-            
-            runSpeed /= scalar;
-            runAcceleration /= scalar;
-            dashCoolDown *= scalar;
-            gravity *= scalar;
-        }
-
-        yield return new WaitForSeconds(duration);
-
-        slow = false;
-        
-        runSpeed = originalSpeed;
-        runAcceleration = originalAcceleration;
-        dashCoolDown = originalDashCooldown;
-        gravity = originalGravity;
+        /* if (!slow) {
+ 
+             originalSpeed = runSpeed;
+             originalAcceleration = runAcceleration;
+             originalDashCooldown = dashCoolDown;
+             originalGravity = gravity;
+             
+             slow = true;
+             
+             runSpeed /= scalar;
+             runAcceleration /= scalar;
+             dashCoolDown *= scalar;
+             gravity *= scalar;
+         }
+ 
+         yield return new WaitForSeconds(duration);
+ 
+         slow = false;
+         
+         runSpeed = originalSpeed;
+         runAcceleration = originalAcceleration;
+         dashCoolDown = originalDashCooldown;
+         gravity = originalGravity;*/
 
     }
 
